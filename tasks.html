@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/style.min.css" />
+  </head>
+  <body>
+    <header>
+      <nav class="flex items-center p-2 navMenu">
+        <a href="/" class="logo">
+          <img src="./img/logo.svg" alt="" />
+        </a>
+      </nav>
+
+      <div class="flex items-center gap-2">
+        <button class="menuToggle lg:hidden">
+          <iconify-icon icon="ion:menu"></iconify-icon>
+        </button>
+  <!-- notification -->
+  <div class="notification">
+    <iconify-icon icon="fluent:alert-32-regular"></iconify-icon>
+    <span class="badge">2</span>
+    <div class="dropdown">
+      <ul>
+        <li>
+          <a href="">
+            <h4>Lorem ipsum dolor sit.</h4>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing...</p>
+          </a>
+        </li>
+        <li>
+          <a href="">
+            <h4>Lorem ipsum dolor sit.</h4>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing...</p>
+          </a>
+        </li>
+        <li>
+          <a href="">
+            <h4>Lorem ipsum dolor sit.</h4>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing...</p>
+          </a>
+        </li>
+        <li>
+          <a href="">
+            <h4>Lorem ipsum dolor sit.</h4>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing...</p>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+        <!-- my account -->
+        <div class="myaccount">
+          <div class="flex items-center gap-2">
+            <div class="image">
+              <img src="./img/female-user.webp" alt="" />
+            </div>
+          </div>
+          <div class="dropdown">
+            <div class="dropdown-content">
+              <a href="#">My Account</a>
+              <a href="#">Logout</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main>
+      <div class="flex">
+        <div class="p-5 sidemenu">
+          <nav class="sidebarMenuItems">
+            <ul>
+              <li class="">
+                <a href="./index.html">
+                  <span class="icon"
+                    ><iconify-icon icon="fluent:alert-32-regular"></iconify-icon
+                  ></span>
+                  <span class="title">Alerts</span>
+                </a>
+              </li>
+
+              <li class="">
+                <a href="./forecasts.html">
+                  <span class="icon">
+                    <iconify-icon icon="ph:trend-up-bold"></iconify-icon>
+                  </span>
+                  <span class="title">Forecasts</span>
+                </a>
+              </li>
+              <li class="active">
+                <a href="./tasks.html">
+                  <span class="icon">
+                    <iconify-icon icon="ion:list"></iconify-icon>
+                  </span>
+                  <span class="title">Tasks</span>
+                </a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+
+        <!-- page content -->
+        <div class="p-5 content">
+          <div class="inner">
+            <!-- cards -->
+            <div class="grid gap-5 md:grid-cols-3 xl:grid-cols-5">
+              <div class="crd py-2 px-3 !bg-[#FF5151]">
+                <div class="grid items-center grid-cols-7 gap-5">
+                  <div class="col-span-5 p-2">
+                    <p class="bigTxt">87</p>
+                    <p class="smallTxt">Average Task Time</p>
+                  </div>
+                  <div class="col-span-2 p-2">
+                    <div class="circleProgress" data-value="87">
+                      <span class="text-white">87%</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="crd py-2 px-3 !bg-primary">
+                <div class="grid items-center grid-cols-7 gap-5">
+                  <div class="col-span-4 p-2">
+                    <p class="bigTxt">Upgrading Lighting System</p>
+                    <p class="smallTxt">Task with the Highest Time</p>
+                  </div>
+                  <div class="col-span-3 p-2">
+                    <div class="lineProgress" data-value="79">
+                      <span class="text-white">79%</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- an alert -->
+            <div class="mt-5 alert">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Perspiciatis, voluptate.
+            </div>
+            <!-- add card here -->
+
+            <div class="py-5 mt-5 rounded-md">
+              <div class="grid gap-5 mt-5 lg:grid-cols-5">
+                <div class="p-5 bg-white rounded-md lg:col-span-3 lg:x-10">
+                  <!-- the data attribute should be a valid json data -->
+                  <p class="mb-5 font-bold text-secondary">
+                    Difference in Price per Quarter
+                  </p>
+                  <canvas
+                    height="100"
+                    label=" Most Popular At PPM Manufacturer"
+                    data='[  {
+                        "data": "Refurbishing Projector",
+                        "count": 10
+                      },
+                      {
+                        "data": "Upgrading Lighting System",
+                        "count": 20
+                      },
+                      {
+                        "data": "Renovating Restrooms",
+                        "count": 25
+                      },
+                      {
+                        "data": "Replacing HVAC System",
+                        "count": 30
+                      }
+              ]'
+                    class="barChart"
+                  >
+                  </canvas>
+                </div>
+              </div>
+            </div>
+            <div class="mt-5 bg-white border rounded-md">
+              <h4 class="px-5 pt-5 pb-0 text-lg font-medium">
+                Ai generated alerts
+              </h4>
+              <div
+                class="flex flex-col-reverse items-start justify-between gap-2 p-5 lg:flex-row"
+              >
+                <!-- sort form -->
+                <form action="" class="sortForm">
+                  <select name="" id="">
+                    <option value="">Sort by</option>
+                    <option value="">Date</option>
+                    <option value="">Highest</option>
+                    <option value="">Lowest</option>
+                  </select>
+                </form>
+
+                <!-- add hasModel to enable modal -->
+                <!-- search bar -->
+                <form action="" class="searchForm">
+                  <input type="text" name="" placeholder="search..." id="" />
+                  <div class="icon">
+                    <iconify-icon icon="tabler:search"></iconify-icon>
+                  </div>
+                </form>
+              </div>
+              <div class="w-full overflow-auto">
+                <table
+                  class="w-full !border-l-0 !border-r-0 dataTable hasModal"
+                >
+                  <thead>
+                    <tr>
+                      <th>Task</th>
+                      <th>Asset</th>
+                      <th>Programme</th>
+                      <th class="bg-gray-50">Al Forecasted Time to Complete</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td data-id="1">NP-F801E</td>
+                      <td>Video Conferencing System</td>
+                      <td>30,000</td>
+                      <td class="bg-gray-100">
+                        35,000
+                       
+                      </td>
+                    </tr>
+                    <tr>
+                      <td data-id="1">NP-F801E</td>
+                      <td>Video Conferencing System</td>
+                      <td>30,000</td>
+                      <td class="bg-gray-50">
+                        35,000
+                       
+                      </td>
+                    </tr>
+                    <tr>
+                      <td data-id="1">NP-F801E</td>
+                      <td>Video Conferencing System</td>
+                      <td>30,000</td>
+                      <td class="bg-gray-100">
+                        35,000
+                       
+                      </td>
+                    </tr>
+                    <tr>
+                      <td data-id="1">NP-F801E</td>
+                      <td>Video Conferencing System</td>
+                      <td>30,000</td>
+                      <td class="bg-gray-50">
+                        35,000
+                       
+                      </td>
+                    </tr>
+                    <tr>
+                      <td data-id="1">NP-F801E</td>
+                      <td>Video Conferencing System</td>
+                      <td>30,000</td>
+                      <td class="bg-gray-100">
+                        35,000
+                       
+                      </td>
+                    </tr>
+                    <tr>
+                      <td data-id="1">NP-F801E</td>
+                      <td>Video Conferencing System</td>
+                      <td>30,000</td>
+                      <td class="bg-gray-50">
+                        35,000
+                       
+                      </td>
+                    </tr>
+                    <tr>
+                      <td data-id="1">NP-F801E</td>
+                      <td>Video Conferencing System</td>
+                      <td>30,000</td>
+                      <td class="bg-gray-100">
+                        35,000
+                       
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <div class="flex justify-end my-10">
+                <ul class="pagination">
+                  <li class="disabled">
+                    <a href="#">
+                      <iconify-icon
+                        icon="fluent:chevron-left-16-regular"
+                      ></iconify-icon>
+                    </a>
+                  </li>
+                  <li class="active">
+                    <a href="#" class="active">1</a>
+                  </li>
+                  <li>
+                    <a href="#">2</a>
+                  </li>
+                  <li>...</li>
+                  <li>
+                    <a href="#">10</a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <iconify-icon
+                        icon="fluent:chevron-right-16-regular"
+                      ></iconify-icon>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!-- here is the popup modal for table -->
+    <div class="modal">
+      <div class="p-3 modal_content">
+        <div class="flex justify-between gap-5 px-3 pb-2 -mx-3 border-b top">
+          <h3>Some heading here</h3>
+          <button onclick="closeModal()" class="closeBtn">
+            <iconify-icon icon="ic:round-close"></iconify-icon>
+          </button>
+        </div>
+
+        <!-- model body -->
+
+        <div class="model_body">
+          <p class="mt-2 text-sm">
+            Lorem ipsum dolor sit amet consectetur <b> adipisicing</b> elit.
+            Quis, dolore?
+          </p>
+          <div class="grid grid-cols-3 gap-2 p-5 my-5 rounded-md bg-off">
+            <div class="py-1 col">
+              <strong> Some heading </strong>
+            </div>
+            <div class="col-span-2 py-1">
+              <p>some Content</p>
+            </div>
+            <div class="py-1 col">
+              <strong> Some heading </strong>
+            </div>
+            <div class="col-span-2 py-1">
+              <p>some Content</p>
+            </div>
+            <div class="py-1 col">
+              <strong> Some heading </strong>
+            </div>
+            <div class="col-span-2 py-1">
+              <p>some Content</p>
+            </div>
+            <div class="py-1 col">
+              <strong> Some heading </strong>
+            </div>
+            <div class="col-span-2 py-1">
+              <p>some Content</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="modal_footer">
+          <div class="flex justify-end">
+            <button onclick="closeModal()" class="btn">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- chatbot -->
+    <button class="triggetChat">
+      <div class="openBtn">
+        <iconify-icon icon="mynaui:message"></iconify-icon>
+      </div>
+      <div class="closeBtn">
+        <iconify-icon icon="ic:round-close"></iconify-icon>
+      </div>
+    </button>
+
+    <div class="chatBox">
+      <div class="p-3 header">
+        <div class="image">
+          <img src="./img/logoipsum-299.svg" alt="" />
+        </div>
+        <div>
+          <h3>Chatbot</h3>
+          <p class="activeTxt">active now</p>
+        </div>
+      </div>
+      <div class="p-3 body">
+        <div class="txt fromMe">Hi</div>
+        <div class="txt fromOther">Hello</div>
+        <div class="txt fromMe">How are you?</div>
+        <div class="txt fromOther">I'm fine</div>
+        <div class="txt fromMe">How are you?</div>
+        <div class="txt fromOther">I'm fine</div>
+        <div class="txt fromOther">How can I help you?</div>
+        <div class="txt fromMe">How are you?</div>
+        <div class="txt fromOther">I'm fine</div>
+        <div class="txt fromOther">How can I help you?</div>
+        <div class="txt fromMe">How are you?</div>
+        <div class="txt fromOther">I'm fine</div>
+        <div class="txt fromOther">How can I help you?</div>
+        <div class="txt fromMe">How are you?</div>
+        <div class="txt fromOther">I'm fine</div>
+        <div class="txt fromOther">How can I help you?</div>
+        <div class="txt fromMe">How are you?</div>
+        <div class="txt fromOther">I'm fine</div>
+        <div class="txt fromOther">How can I help you?</div>
+        <div class="txt fromMe">How are you?</div>
+        <div class="txt fromOther">I'm fine</div>
+        <div class="txt fromOther">How can I help you?</div>
+        <div class="txt fromMe">How are you?</div>
+        <div class="txt fromOther">I'm fine</div>
+        <div class="txt fromOther">How can I help you?</div>
+      </div>
+      <div class="p-3 inputBox">
+        <input type="text" />
+        <button class="sendBtn">
+          <iconify-icon icon="material-symbols:send-outline"></iconify-icon>
+        </button>
+      </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/progressbar.js/0.6.1/progressbar.min.js"></script>
+    <script type="module" src="./js/main.js"></script>
+
+    <!-- js for table modal -->
+    <script>
+      document.querySelectorAll(".hasModal").forEach((table) => {
+        table.querySelectorAll("tbody tr").forEach((tr) => {
+          tr.addEventListener("click", function () {
+            const id = this.dataset.id;
+            document.querySelector(".modal").dataset.id = id;
+            document.querySelector(".modal").classList.add("active");
+          });
+        });
+      });
+
+      function closeModal() {
+        document.querySelector(".modal").classList.remove("active");
+      }
+    </script>
+  </body>
+</html>
